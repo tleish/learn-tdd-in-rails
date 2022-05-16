@@ -15,5 +15,8 @@ RSpec.describe "CreatingBlogPosts", type: :system do
 
     expect(page).to have_content('Hello, World!')
     expect(page).to have_content('Hello, I say!')
+
+    blog_post = BlogPost.order("id").last
+    expect(blog_post.title).to eq('Hello, World!')
   end
 end
