@@ -12,5 +12,7 @@ RSpec.describe "CreatingBlogPosts", type: :system do
     fill_in 'Body', with: 'Hello, I say!'
 
     click_on 'Create Blog Post'
+
+    expect(page).to have_content('Hello, World!')
   end
 end
