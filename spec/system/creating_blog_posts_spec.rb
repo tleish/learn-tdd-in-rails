@@ -7,5 +7,7 @@ RSpec.describe "CreatingBlogPosts", type: :system do
 
   it 'saves and displays the resulting blog post' do
     visit '/blog_posts/new'
+
+    fill_in 'Title', with: 'Hello, World!'
   end
 end
