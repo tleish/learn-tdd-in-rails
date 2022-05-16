@@ -4,5 +4,12 @@ class BlogPostsController < ApplicationController
   end
 
   def create
+    @blog_post = BlogPost.new(blog_post_params)
+  end
+
+  private
+
+  def blog_post_params
+    params.require(:blog_post).permit(:title)
   end
 end
