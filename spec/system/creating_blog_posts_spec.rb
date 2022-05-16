@@ -9,5 +9,6 @@ RSpec.describe "CreatingBlogPosts", type: :system do
     visit '/blog_posts/new'
 
     fill_in 'Title', with: 'Hello, World!'
+    fill_in 'Body', with: 'Hello, I say!'
   end
 end
