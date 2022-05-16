@@ -11,6 +11,7 @@
 #####=== Include These Hidden Files ===#####
 !.gitignore
 !.gitattributes
+!.rspec
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
